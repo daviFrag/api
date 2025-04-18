@@ -1,0 +1,16 @@
+{
+    "name": "api",
+    "config": {
+        "params": []
+    },
+    "operations": {
+        "HttpListener": {
+            "params": [
+                "port",
+                "domain",
+                "route"
+            ],
+            "returnType": ""
+        }
+    }
+}
