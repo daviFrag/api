@@ -13,11 +13,11 @@ import (
 // }
 
 // this is a source component, try to came up with a clever solution
-func (api *ApiPlugin) HttpListener(port string, domain string, method string, path string /*, controller func() interface{}*/) error {
+func (api *ApiPlugin) HttpListener(port string, domain string, method string, path string, controller func()) error {
 
 	api.app.Add(method, path, func(c *fiber.Ctx) error {
-		//resp := controller()
-		return c.JSON("HELLO WORLD")
+		controller()
+		return c.JSON("flow executed!")
 	})
 
 	log.Fatal(api.app.Listen(domain + ":" + port))

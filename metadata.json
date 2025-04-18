@@ -9,7 +9,8 @@
                 "port",
                 "domain",
                 "method",
-                "path"
+                "path",
+                "controller"
             ],
             "returnType": ""
         }
