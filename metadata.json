@@ -8,7 +8,8 @@
             "params": [
                 "port",
                 "domain",
-                "route"
+                "method",
+                "path"
             ],
             "returnType": ""
         }
